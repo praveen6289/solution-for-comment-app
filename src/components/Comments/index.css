@@ -1,0 +1,126 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  justify-content: center;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 1140px;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 500;
+  font-size: 30px;
+}
+.form-description {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+}
+.comments-img {
+  width: 80%;
+  align-self: center;
+}
+.comment-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.text-area {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 14px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.add-comment-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #0284c7;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #dee0e3;
+}
+.horizontal-line {
+  color: #cbd2d9;
+  background-color: #cbd2d9;
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.comments-count-container {
+  display: flex;
+  align-items: center;
+}
+.comments-count {
+  color: #dee0e3;
+  background-color: #0284c7;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 30px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.comments-list {
+  padding-left: 0;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    padding-top: 20px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .comments-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .comments-img {
+    width: 350px;
+    height: 300px;
+    order: 1;
+  }
+  .comment-details-container {
+    display: flex;
+    flex-direction: column;
+    order: 0;
+    width: 450px;
+  }
+}
